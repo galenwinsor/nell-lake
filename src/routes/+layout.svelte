@@ -19,7 +19,7 @@
 
 <style>
 	.background {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100vw;
@@ -31,7 +31,7 @@
 
 	nav {
 		display: flex;
-		gap: 2rem;
+		gap: var(--flex-gap);
 		align-items: center;
 
 		padding: 4rem 0;

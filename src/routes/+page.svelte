@@ -1,7 +1,37 @@
-<h1 class="title">Nell Lake</h1>
-<div class="stripe one" />
-<div class="stripe two" />
-<div class="stripe three" />
+<script lang="script">
+	import Bio from "./components/Bio.svelte";
+	import Highlight from "./components/Highlight.svelte";
+</script>
+
+<header>
+	<h1 class="title">Nell Lake</h1>
+	<div class="stripe one" />
+	<div class="stripe two" />
+	<div class="stripe three" />
+</header>
+<section class="highlights">
+	<Highlight title="author">
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis neque consectetur esse vitae
+		illum ex dolores enim laborum ratione, quisquam quos nostrum ad fuga eius vero deserunt nemo
+		saepe dolore.
+	</Highlight>
+	<Highlight title="professor">
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis neque consectetur esse vitae
+		illum ex dolores enim laborum ratione, quisquam quos nostrum ad fuga eius vero deserunt nemo
+		saepe dolore.
+	</Highlight>
+	<Highlight title="journalist">
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis neque consectetur esse vitae
+		illum ex dolores enim laborum ratione, quisquam quos nostrum ad fuga eius vero deserunt nemo
+		saepe dolore.
+	</Highlight>
+	<Highlight title="editor & coach">
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis neque consectetur esse vitae
+		illum ex dolores enim laborum ratione, quisquam quos nostrum ad fuga eius vero deserunt nemo
+		saepe dolore.
+	</Highlight>
+</section>
+<Bio />
 
 <style>
 	.title {
@@ -44,5 +74,17 @@
 		width: 12rem;
 
 		background: var(--brown-2);
+	}
+
+	header {
+		margin-bottom: var(--section-gap);
+	}
+
+	.highlights {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--flex-gap);
+
+		margin-bottom: var(--section-gap);
 	}
 </style>
