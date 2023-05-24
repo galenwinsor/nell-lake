@@ -1,6 +1,10 @@
 <script lang="script">
 	import Bio from "./components/Bio.svelte";
 	import Highlight from "./components/Highlight.svelte";
+	import Showcase from "./components/Showcase.svelte";
+	import TestimonyCard from "./components/TestimonyCard.svelte";
+	import caregivers from "$lib/assets/caregivers-cover.png";
+	import ted from "$lib/assets/ted.png";
 </script>
 
 <header>
@@ -32,6 +36,69 @@
 	</Highlight>
 </section>
 <Bio />
+<Showcase
+	title="the caregivers"
+	action="See all books"
+	destination="/books"
+	media={caregivers}
+	side="left"
+>
+	<p>
+		“[A] beautifully written account of a year in the company of caregivers… The Caregivers is as
+		elegantly constructed as a novel, but more than that, Lake writes about these people with such
+		warmth and vividness that they feel as memorable as our favorite fictional characters. In
+		sharing these stories with readers, Lake has written a book that bears witness to their
+		‘necessary, intimate, private heroism.'”
+	</p>
+	<br />
+	<p style:font-weight="bold">The Boston Globe</p>
+</Showcase>
+<Showcase
+	title="health as morality in american life (brown university)"
+	action="See all courses"
+	destination="/teaching"
+	side="right"
+>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Error pariatur ea ullam veniam quasi
+		suscipit! Tempore ad illum id omnis, provident dignissimos aperiam maiores inventore architecto
+		neque necessitatibus numquam quae.
+	</p>
+	<br />
+	<p style:font-weight="bold">Student evaluation</p>
+</Showcase>
+<Showcase title="praise for my coaching and editing" action="Get in touch" destination="/editing">
+	<div class="testimonies">
+		<TestimonyCard>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla ullam repellat expedita
+				id iste quam quidem quae quos? Ratione doloremque exercitationem mollitia nostrum inventore.
+				Corporis magnam alias possimus. Voluptatem?
+			</p>
+		</TestimonyCard>
+		<TestimonyCard>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla ullam repellat expedita
+				id iste quam quidem quae quos? Ratione doloremque exercitationem mollitia nostrum inventore.
+				Corporis magnam alias possimus. Voluptatem?
+			</p>
+		</TestimonyCard>
+		<TestimonyCard>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla ullam repellat expedita
+				id iste quam quidem quae quos? Ratione doloremque exercitationem mollitia nostrum inventore.
+				Corporis magnam alias possimus. Voluptatem?
+			</p>
+		</TestimonyCard>
+		<TestimonyCard>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla ullam repellat expedita
+				id iste quam quidem quae quos? Ratione doloremque exercitationem mollitia nostrum inventore.
+				Corporis magnam alias possimus. Voluptatem?
+			</p>
+		</TestimonyCard>
+	</div>
+</Showcase>
 
 <style>
 	.title {
@@ -76,15 +143,17 @@
 		background: var(--brown-2);
 	}
 
-	header {
-		margin-bottom: var(--section-gap);
-	}
-
 	.highlights {
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--flex-gap);
+	}
 
-		margin-bottom: var(--section-gap);
+	.testimonies {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--flex-gap);
+
+		width: 100%;
 	}
 </style>

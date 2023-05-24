@@ -10,11 +10,34 @@
 			{@html NL}
 		</a>
 		<hr />
-		<a href="/books">BOOKS</a>
-		<a href="/books">ARTICLES</a>
-		<a href="/books">BIO</a>
+		<ul>
+			<li>
+				<a href="/books">BOOKS</a>
+			</li>
+			<li>
+				<a href="/articles">ARTICLES</a>
+			</li>
+			<li>
+				<a href="/about">BIO</a>
+			</li>
+		</ul>
 	</nav>
 	<slot />
+	<footer>
+		<p>© Nell Lake 2023</p>
+		<ul>
+			<li>
+				<a href="/books">BOOKS</a>
+			</li>
+			<li>
+				<a href="/articles">ARTICLES</a>
+			</li>
+			<li>
+				<a href="/about">ABOUT</a>
+			</li>
+		</ul>
+		<p>Site design by Galen Winsor</p>
+	</footer>
 </div>
 
 <style>
@@ -45,11 +68,26 @@
 		transform: rotate(90deg);
 	}
 
-	nav a {
+	a {
 		color: var(--blue-6);
 	}
 
 	.container {
 		margin: 0 clamp(4rem, 10%, 20rem);
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 4rem 0;
+	}
+
+	ul {
+		list-style: none;
+
+		display: flex;
+		gap: var(--flex-gap);
 	}
 </style>

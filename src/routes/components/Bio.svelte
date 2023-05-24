@@ -6,16 +6,19 @@
 	<div class="headshot">
 		<img src={headshot} alt="Headshot of Nell Lake" />
 	</div>
-	<p>
-		For more than 20 years, I’ve reported on, analyzed, and written intimate narrative about
-		American social issues, focusing on health, healthcare, and medicine. My first book, The
-		Caregivers: A Support Group’s Stories of Slow Loss, Courage, and Love, chronicles two years in
-		the lives of people caring for ill and elderly family members (Scribner 2014; paperback 2015).
-		Since the fall of 2016, I’ve been pursuing a PhD in American Studies at Brown, focusing on the
-		politics of care. In AY 2020-2021, I held an American Dissertation Fellowship from the American
-		Association of University Women and for three years have been a research associate with the Five
-		College Women’s Studies Research Center...
-	</p>
+	<div>
+		<h2>about me</h2>
+		<p>
+			For more than 20 years, I’ve reported on, analyzed, and written intimate narrative about
+			American social issues, focusing on health, healthcare, and medicine. My first book, The
+			Caregivers: A Support Group’s Stories of Slow Loss, Courage, and Love, chronicles two years in
+			the lives of people caring for ill and elderly family members (Scribner 2014; paperback 2015).
+			Since the fall of 2016, I’ve been pursuing a PhD in American Studies at Brown, focusing on the
+			politics of care. In AY 2020-2021, I held an American Dissertation Fellowship from the
+			American Association of University Women and for three years have been a research associate
+			with the Five College Women’s Studies Research Center...
+		</p>
+	</div>
 </section>
 
 <style>
@@ -37,6 +40,10 @@
 		display: block;
 
 		margin: 0 auto;
+	}
+
+	h2 {
+		margin-bottom: 1rem;
 	}
 
 	section {

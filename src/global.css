@@ -28,6 +28,7 @@
     --red-2: hsla(10, 40%, 70%, 1);
     --red-3: hsla(4, 30%, 60%, 1);
     --red-4: hsla(355, 24%, 30%, 1);
+    --action: #B83014;
 
     --flex-gap: 2rem;
     --section-gap: 12rem;
@@ -41,6 +42,10 @@ h1 {
     font-family: "DM Serif Display", serif;
 }
 
+h2 {
+    letter-spacing: 0.1rem;
+}
+
 a {
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -50,4 +55,13 @@ a {
 
 p {
     line-height: 1.5rem;
+}
+
+section, header {
+    margin-bottom: var(--section-gap);
+}
+
+img {
+    display: block;
+    width: 100%;
 }
