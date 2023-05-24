@@ -4,7 +4,6 @@
 	import Showcase from "./components/Showcase.svelte";
 	import TestimonyCard from "./components/TestimonyCard.svelte";
 	import caregivers from "$lib/assets/caregivers-cover.png";
-	import ted from "$lib/assets/ted.png";
 </script>
 
 <header>
